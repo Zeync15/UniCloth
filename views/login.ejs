@@ -1,0 +1,67 @@
+<%- include("partials/header") %>
+
+<div class="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 login-title">
+                <h1>LOGIN / REGISTER</h1>
+            </div>
+            <div class="col-6 login-caution">
+                <ul>
+                    <li><small>Have you shopped at UniCloth online store before? If yes, log in. If not, let's create
+                            your
+                            account.</small></li>
+                    <li><small>Please do not re-use passwords on multiple sites.</small></li>
+                    <li><small>Please do not use a password that third parties can easily guess.</small></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2>Login</h2>
+            <p>I'm a UniCloth member.</p>
+            <form action="/login" method="POST">
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <label for="inputUser">Username</label>
+                        <input class="form-control" type="username" name="username">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <label for="inputPass">Password</label>
+                        <input class="form-control" type="password" name="password">
+                    </div>
+                </div>
+                <div class="text-center padding">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <h2>Not a member?</h2>
+            <p>Join us now to enjoy more deals!!!</p>
+            <br>
+            <br>
+            <br>
+            <div class="text-center">
+                <a href="/register" class="btn btn-danger btn-lg">Hook me up!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <img class="deals-wrapper" src="indexImage/loginDeals.png" alt="">
+</div>
+
+
+
+
+
+<%- include("partials/footer") %>
