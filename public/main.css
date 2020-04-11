@@ -186,3 +186,10 @@ hr.light-100 {
     width: 100%;
 }
 
+/* Register Styles */
+.register-card {
+    width: 25rem;
+    margin: 0 auto;
+    border: solid black 1px;
+}
+
