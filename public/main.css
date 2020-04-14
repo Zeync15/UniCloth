@@ -81,6 +81,22 @@ html, body {
 }
 
 /* Item Styles */
+.menModel { 
+    height: 50%;
+    width: 100%;
+}
+
+.arrival {
+    position: relative;
+}
+
+.arrival-context {
+    position: absolute;
+    top: 20rem;
+    right: 18rem;
+    color: white;
+}
+
 .items-wrapper .card {
     border: none;
     height: 20rem;
