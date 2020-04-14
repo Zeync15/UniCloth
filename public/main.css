@@ -83,7 +83,9 @@ html, body {
 /* Item Styles */
 .items-wrapper .card {
     border: none;
+    height: 100%;
 }
+
 
 /* About US styles */
 #History-of-Company .jumbotron {
