@@ -80,6 +80,11 @@ html, body {
     opacity: 1;
 }
 
+/* Item Styles */
+.items-wrapper .card {
+    border: none;
+}
+
 /* About US styles */
 #History-of-Company .jumbotron {
     margin-top: 2rem;
