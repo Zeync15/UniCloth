@@ -6,11 +6,24 @@ var express = require("express"),
     flash = require("connect-flash"),
     session = require("express-session");
 
+// localhost database
 mongoose.connect("mongodb://localhost/UniCloth", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
     useCreateIndex: true
+});
+
+//mongo atlas
+mongoose.connect('mongodb+srv://dbUser:dbUser@cluster0.fuih8.mongodb.net/UniCloth?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+}).then(() => {
+    console.log("Connected to DB!");
+}).catch(err => {
+    console.log("Error:", err.message);
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
