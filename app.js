@@ -4,7 +4,8 @@ var express = require("express"),
     mongoose = require("mongoose"),
     passport = require("passport"),
     flash = require("connect-flash"),
-    session = require("express-session");
+    session = require("express-session"),
+    User = require("./models/user");
 
 // localhost database
 // mongoose.connect("mongodb://localhost/UniCloth", {
