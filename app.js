@@ -4,7 +4,8 @@ var express = require("express"),
     mongoose = require("mongoose"),
     passport = require("passport"),
     flash = require("connect-flash"),
-    session = require("express-session");
+    session = require("express-session"),
+    port = process.env.PORT || 3000;
 
 // localhost database
 // mongoose.connect("mongodb://localhost/UniCloth", {
@@ -59,6 +60,6 @@ app.use("/", require("./routes/index"));
 app.use("/", require("./routes/content"));
 app.use("/", require("./routes/user"));
 
-app.listen(3000, function () {
-    console.log("Server started!");
+app.listen(port, function () {
+    console.log("Server Has Started!");
 });
