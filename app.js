@@ -15,7 +15,7 @@ var express = require("express"),
 // });
 
 //mongo atlas
-mongoose.connect('mongodb+srv://dbUser:dbUser@cluster0.fuih8.mongodb.net/UniCloth?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://dbUser:dbUser@cluster0.fuih8.mongodb.net/dbUser?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
